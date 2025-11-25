@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>landin-Page Kame Tattoo</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="top--header--container" id="header">
+      <nav class="nav__header__container maxWidth" aria-label="...">
+        <div class="top--header--logo">
+          <!-- logo preta\black -->
+          <img
+            src="images/Logo-black-100x100.png"
+            class="logo-mobile"
+            alt="logo kame tattoo"
+          />
+
+          <!-- logo branca\white -->
+          <img
+            src="images/Logo-white-100x100.png"
+            class="logo-desktop"
+            alt="logo kame tattoo"
+          />
+        </div>
+
+        <div class="top--header--logo--wht"></div>
+        <ul class="menu menu--principal">
+          <li class="menu__item">
+            <a class="menu__link active" href="#sobreMin">
+              <span class="menu__text">Home</span>
+            </a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link active" href="#portifolio">
+              <span class="menu__text">Portifólio</span>
+            </a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link active" href="#contatos">
+              <span class="menu__text">Contatos</span>
+            </a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link active" href="#localização">
+              <span class="menu__text">Localização</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- HEADER -->
+
+    <section class="banner"></section>
+
+    <nav class="nav--mobile" aria-label="nav--mobile">
+      <ul class="menu menu--mobile">
+        <li class="menu__item">
+          <a class="menu__link active" href="#sobreMin">
+            <i class="menu__icon fa-solid fa-house"></i>
+            <span class="menu__text">Home</span>
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link active" href="#portifolio">
+            <i class="menu__icon fa-solid fa-paintbrush"></i>
+            <span class="menu__text">Portifólio</span>
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link active" href="#contatos">
+            <i class="menu__icon fa-solid fa-envelope"></i>
+            <span class="menu__text">Contatos</span>
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link active" href="#localização">
+            <i class="menu__icon fa-solid fa-location-dot"></i>
+
+            <span class="menu__text">Localização</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="about--me--section" id="sobreMin">
+        <div class="maxWidth">
+          <h1 class="title__text">Sobre Mim</h1>
+          <p class="about__me__text">
+            Meu nome é Gustavo Henrique também conhecido como "Kame" sou nascido
+            em Osasco, tatuo desde 2020. Atualmente trabalho em São Paulo, faço
+            diversos estilos de trabalho, porém me dedico especialmente ao
+            estilo tradicional de tattoo japonesa, tenho uma gama diversa de
+            flashs e projetos disponíveis, me dedico com afinco a entregar uma
+            tatuagem que ao mesmo tempo respeita a anatomia do corpo, a tradição
+            e os meus clientes, para tal tenho como base o desenho, as
+            composições são feitas quase sempre no freehand, assim como se deve.
+            Espero que goste do meu portifólio e estou a espera do seu contato.
+          </p>
+        </div>
+      </section>
+
+      <section class="portifolio--section maxWidth" id="portifolio">
+        <h2 class="subTitle__text">Portifólio</h2>
+        <div class="wrap--portifolio--section--img">
+          <img class="works__img maxWidth" src="images/IMG_0374.jpg" alt="" />
+          <img
+            class="works__img"
+            src="images/IMG_0462.jpg"
+            alt="tattoo de gato com peixe na boca"
+          />
+          <img
+            class="works__img"
+            src="images/IMG_2503.jpg"
+            alt="tatto japonesa no braco"
+          />
+          <img
+            class="works__img"
+            src="images/IMG_1359.jpg"
+            alt="tatto japonesa no braco"
+          />
+          <img class="works__img" src="images/IMG_0636.jpg" alt="" />
+          <img class="works__img" src="images/IMG_1073.jpg" alt="" />
+        </div>
+      </section>
+
+      <section class="form--section maxWidth">
+        <h2 class="subTitle__text">Formulário de orçamento</h2>
+        <form
+          action="enviar.php"
+          method="POST"
+          enctype="multipart/form-data"
+          class="form--container"
+        >
+          <h3 class="title__form">Seus Dados</h3>
+          <label for="txtName">Nome:</label>
+          <input type="text" id="txtName" name="nome" required />
+
+          <label for="txtEmail">Email:</label>
+          <input type="email" id="txtEmail" name="email" required />
+
+          <label for="txtIdade">Idade:</label>
+          <input
+            type="number"
+            id="txtIdade"
+            name="idade"
+            min="18"
+            max="200"
+            step="1"
+            placeholder="Ex: 18"
+            required
+          />
+
+          <label for="numeroCel">Numero de Celular:</label>
+          <input
+            type="number"
+            id="numeroCel"
+            name="numeroCel"
+            placeholder="Ex: (11)"
+            required
+          />
+
+          <label for="txtCidade">Cidade:</label>
+          <input type="text" id="txtCidade" name="cidade" required />
+
+          <label for="txtEstado">Estado:</label>
+          <select id="txtEstado" name="estado" class="select--estado" required>
+            <option value="" disabled selected>Selecione seu Estado</option>
+
+            <option value="AC">Acre</option>
+            <option value="AM">Amazonas</option>
+            <option value="AP">Amapá</option>
+            <option value="PA">Pará</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="TO">Tocantins</option>
+
+            <option value="AL">Alagoas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="MA">Maranhão</option>
+            <option value="PB">Paraíba</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="SE">Sergipe</option>
+
+            <option value="DF">Distrito Federal</option>
+            <option value="GO">Goiás</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+
+            <option value="ES">Espírito Santo</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SP">São Paulo</option>
+
+            <option value="PR">Paraná</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="SC">Santa Catarina</option>
+          </select>
+
+          <h3 class="title__form">Tattoo</h3>
+          <label for="txtTamanhotattoo">Tamanho:</label>
+          <input
+            type="text"
+            id="txtTamanhotattoo"
+            name="tamanhotattoo"
+            placeholder="Ex: 10cm"
+            required
+          />
+
+          <label for="txtLocalCorpo">Local do Corpo:</label>
+          <input type="text" id="txtLocalCorpo" name="localCorpo" />
+
+          <div class="form-group">
+            <label for="imgFotoLocalCorpo">Foto do local do Corpo:</label>
+            <input
+              type="file"
+              id="imgFotoLocalCorpo"
+              name="fotoLocalCorpo"
+              accept="image/*"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="imgRefTattoo">Referencias de Tattoo:</label>
+            <input
+              type="file"
+              id="imgRefTattoo"
+              name="imgRefTattoo"
+              accept="image/*"
+            />
+          </div>
+
+          <label for="ideiaTattoo">Descreva sua ideia:</label>
+          <textarea
+            name="ideiaTattoo"
+            id="ideiaTattoo"
+            cols="5"
+            rows="5"
+            required
+          ></textarea>
+
+          <div class="form-group terms-container">
+            <input type="checkbox" id="termos" name="termos" required />
+            <label for="termos" class="terms-label">
+              Concordo com os
+              <a class="termosUso" href="termos.html" target="_blank"
+                >Termos de Uso</a
+              >
+              e autorizo o uso dos meus dados para contato conforme a LGPD.
+            </label>
+          </div>
+
+          <button
+            type="submit"
+            id="btnEnviar"
+            name="btnEnviar"
+            class="btnEnviar"
+          >
+            <i class="fa-solid fa-paper-plane"></i> Enviar
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="maxWidth footer-content">
+        <div class="footer-logo">
+          <img src="images/Logo-black-100x100.png" alt="Logo Kame Tattoo" />
+          <span>Kame Tattoo</span>
+        </div>
+
+        <div class="footer-social" id="contatos">
+          <h3>Siga-me nas Redes</h3>
+          <ul class="social-links">
+            <li>
+              <a
+                href="https://instagram.com/kame_tattoo?utm_medium=copy_link"
+                target="_blank"
+                rel="external"
+                aria-label="Instagram"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/5511910747700"
+                target="_blank"
+                rel="external"
+                aria-label="WhatsApp"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:contato.kametattoo@gmail.com" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-location" id="localização">
+          <h3>Localização</h3>
+
+          <details class="map-details">
+            <summary class="fa-address__text map-toggle">
+              <i class="fa-solid fa-location-dot"></i>
+              Av. Brig. Faria Lima, 1616 - Jardim Paulistano
+
+              <span class="click-to-see">(Ver no mapa)</span>
+            </summary>
+
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.9045265181094!2d-46.690795099999995!3d-23.5718722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce570b5b5ed349%3A0x3f606333f813236e!2sAv.%20Brig.%20Faria%20Lima%2C%201616%20-%20Jardim%20Paulistano%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001451-001!5e0!3m2!1spt-BR!2sbr!4v1763231240611!5m2!1spt-BR!2sbr"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="footer--copyright">
+        <p class="footer__text">
+          &copy; 2025 Kame Tattoo. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <div id="modalSucesso" class="modal-container">
+      <div class="modal-content">
+        <h2>Mensagem Enviada! <i class="fa-solid fa-check-circle"></i></h2>
+        <p>
+          Obrigado pelo contato. O tatuador responderá em breve no seu e-mail.
+        </p>
+        <a href="#" onclick="fecharModal()" class="btn-fechar">Fechar</a>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
