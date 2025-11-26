@@ -73,11 +73,12 @@ a {
 
 .nav__header__container .menu__item {
   border-radius: 0.5em;
+  transition: ease-in-out 0.3s;
 }
 
 .nav__header__container .menu__item:hover {
   background-color: color-mix(in srgb, #000000, white 60%);
-  transition: ease-in-out 0.5s;
+  transform: scale(1.1);
 }
 
 .menu__icon,
@@ -213,12 +214,13 @@ textarea {
   text-transform: uppercase;
   font-weight: bold;
   margin-top: 1em;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 .btnEnviar:hover {
   background-color: #585858b6;
   color: rgb(255, 255, 255);
+  transform: scale(1.1);
 }
 
 .form-group label {
@@ -245,6 +247,7 @@ textarea {
 .about__me__text {
   font-size: 1.25em;
   font-weight: 400;
+  line-height: 1.6em;
 }
 
 .portifolio--section {
