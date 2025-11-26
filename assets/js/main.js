@@ -37,20 +37,25 @@ window.addEventListener('scroll', () => {
 })
 
 //Scroll suave para liks de navegacao
-const navLinks = document.querySelectorAll('#menu ul a.menu__link');
+const navLinks = document.querySelectorAll('.menu ul a.menu__link');
 navLinks.forEach(links => {
     links.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            const headerHeight = document.querySelector('header').offsetHeight;
-            const navMobHeight = document.querySelector('.nav--mobile').offsetHeight;
 
-            const targetPosition = target.offsetTop - headerHeight - 30
-            window.scrollTo({ top: targetPosition, behavior: 'smooth' })
+            if (window.innerWidth >= 768) {
+                const headerHeight = document.querySelector('header').offsetHeight;
+                const targetPosition = target.offsetTop - headerHeight - 50
+                window.scrollTo({ top: targetPosition, behavior: 'smooth' })
 
-            const targetPositionNav = target.offsetTop - navMobHeight - 20
-            window.scrollTo({ top: targetPositionNav, behavior: 'smooth' })
+            } else {
+                const navMobHeight = document.querySelector('.nav--mobile').offsetHeight;
+
+                const targetPositionNav = target.offsetTop - navMobHeight - 20
+                window.scrollTo({ top: targetPositionNav, behavior: 'smooth' })
+            }
+
         }
     })
 })
