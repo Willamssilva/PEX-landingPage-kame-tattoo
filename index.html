@@ -16,7 +16,7 @@
 
   <body>
     <header class="top--header--container" id="header">
-      <nav class="nav__header__container maxWidth" aria-label="...">
+      <nav class="nav__header__container maxWidth" id="menu" aria-label="...">
         <div class="top--header--logo">
           <!-- logo preta\black -->
           <img
@@ -33,7 +33,6 @@
           />
         </div>
 
-        <div class="top--header--logo--wht"></div>
         <ul class="menu menu--principal">
           <li class="menu__item">
             <a class="menu__link active" href="#sobreMin">
@@ -65,7 +64,7 @@
 
     <section class="banner"></section>
 
-    <nav class="nav--mobile" aria-label="nav--mobile">
+    <nav id="menu"  class="nav--mobile" aria-label="nav--mobile">
       <ul class="menu menu--mobile">
         <li class="menu__item">
           <a class="menu__link active" href="#sobreMin">
@@ -119,7 +118,11 @@
       <section class="portifolio--section maxWidth" id="portifolio">
         <h2 class="subTitle__text">Portifólio</h2>
         <div class="wrap--portifolio--section--img">
-          <img class="works__img maxWidth" src="images/IMG_0374.jpg" alt="" />
+          <img
+            class="works__img maxWidth"
+            src="images/IMG_0374.jpg"
+            alt="tatuagem de de dois coracoes"
+          />
           <img
             class="works__img"
             src="images/IMG_0462.jpg"
@@ -135,8 +138,16 @@
             src="images/IMG_1359.jpg"
             alt="tatto japonesa no braco"
           />
-          <img class="works__img" src="images/IMG_0636.jpg" alt="" />
-          <img class="works__img" src="images/IMG_1073.jpg" alt="" />
+          <img
+            class="works__img"
+            src="images/IMG_0636.jpg"
+            alt="tatuagem na mao escrito kanu"
+          />
+          <img
+            class="works__img"
+            src="images/IMG_1073.jpg"
+            alt="tatuagem nas costas"
+          />
         </div>
       </section>
 
@@ -150,7 +161,7 @@
         >
           <h3 class="title__form">Seus Dados</h3>
           <label for="txtName">Nome:</label>
-          <input type="text" id="txtName" name="nome" required />
+          <input type="text" id="txtName" name="nome" required autofocus />
 
           <label for="txtEmail">Email:</label>
           <input type="email" id="txtEmail" name="email" required />
@@ -240,7 +251,7 @@
           </div>
 
           <div class="form-group">
-            <label for="imgRefTattoo">Referencias de Tattoo:</label>
+            <label for="imgRefTattoo">Referências:</label>
             <input
               type="file"
               id="imgRefTattoo"
@@ -331,6 +342,7 @@
 
             <div class="map-container">
               <iframe
+                title="frame--maps"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.9045265181094!2d-46.690795099999995!3d-23.5718722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce570b5b5ed349%3A0x3f606333f813236e!2sAv.%20Brig.%20Faria%20Lima%2C%201616%20-%20Jardim%20Paulistano%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001451-001!5e0!3m2!1spt-BR!2sbr!4v1763231240611!5m2!1spt-BR!2sbr"
                 width="600"
                 height="450"

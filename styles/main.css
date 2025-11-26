@@ -103,6 +103,11 @@ a {
   background-color: #888686;
   z-index: 1;
   box-shadow: 0px -1px 10px rgb(0, 0, 0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu--mobile--hidden {
+  transform: translateY(100%);
 }
 
 .menu--mobile .menu__item {
@@ -142,6 +147,11 @@ a {
   align-items: center;
   flex-direction: column;
   padding: 2em;
+}
+
+.form--section input,
+textarea {
+  outline: none;
 }
 
 .form--container {
